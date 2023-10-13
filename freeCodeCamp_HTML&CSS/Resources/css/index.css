@@ -1,0 +1,97 @@
+.h1{
+    text-align: center;
+    font-family: Haffer,sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.p{
+    text-align: left;
+    font-family: Haffer,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.banner_bold_centered{
+   
+    padding: 20px 20%;
+    font-weight: lighter;
+    text-align: center;
+    width: 50%;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(255, 0, 0);
+
+    background: rgb(164, 170, 164);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexit{
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    /*
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    */
+    padding: 20px 20%;
+
+    background: rgb(205, 235, 244);
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+
+
+figure {
+    text-align: center; /* Center the entire figure */
+}
+
+figcaption {
+    font-size: 12px; /* Set the desired font size */
+    font-family: haffer,sans-serif;
+}
+
+IMG {
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit {
+    border-color: #cfd9de;
+    text color: #0f1419;
+    border: 1px solid #cfd9e;
+    border-radius: 18px;
+    background: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+input{
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #dfe1e5;
+    border-radius: 30px;
+    line-height: 24px;
+}
+
+.flexbox{
+    display: flex;
+    justify-content:space-around;
+}
