@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+   
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="https://www.aboutyou.es/favicon.ico">
+
+
     <!--MetaTitle-->
     <title>How to clean white sneakers | ABOUT YOU Tips</title> 
 
@@ -36,8 +42,7 @@
         }
         </script>
 
-    
-    <link rel="stylesheet" href="./Resources/css/index.css">
+  
     
 <!--Meta Robots-->
 <meta name="robots" content="index, follow">
@@ -49,7 +54,9 @@
 
 <body>
     <div class="banner">
-        <h1 class="h1">Cleaning white sneakers can get tricky - <br> Read to the end to know everything you need to know</h1>
+        <header>
+            <h1 class="h1">Cleaning white sneakers can get tricky - <br> Read to the end to know everything you need to know</h1>
+        </header>
         <p class="p"> If you’re anything like us you love your white shoes to stay <i>‘clean and crisp’</i> and sometimes keeping your shoes that way can be hard, right? Need to know how to clean white shoes? Look no further, here are so simple tricks you can try at home!</p>
         <a href="https://www.aboutyou.es" target="_blank" title="This is a Title of the Image, that you can click to follow the link"> 
             <figure>
@@ -69,7 +76,7 @@
 
             <p>Here are our go-to cleaning hacks to <strong>clean white sneakers, sandals or heels</strong>:</p>
         
-         <ul>
+         <ul class="items">
             <li> <u>Warm soapy water</u>: Good for cleaning shoes made from almost any material, just add about one teaspoon of dishwashing liquid to one cup of warm water and stir. Using a cloth or toothbrush, gently scrub the shoe until clean, wipe off any excess water and leave to air dry for several hours.</li>
             <br><li><u>Baking soda and white vinegar</u>: Great for canvas shoes but also works for other shoe types. Mix one tablespoon of hot water with one tablespoon of white vinegar and one tablespoon of baking soda together to form a paste. Using a toothbrush, apply to the shoes in a circular motion, then leave shoes to air for several hours before brushing and shaking off the dried paste.</li>
             <br><li><u>Heavily diluted bleach</u>: A very effective way to clean fabric shoes provided you do it in a well-ventilated location while protecting your skin and eyes. Create a cleaning solution made from one part bleach and five parts water (adding too much bleach could turn your shoes yellow), and work it into the shoes using a toothbrush in circular motions. When finished, use a damp cloth to wipe off the solution and leave to dry for at least 5 hours.</li>
@@ -92,26 +99,77 @@ If you’ve tried everything but your shoes are still looking a little worse for
                 <h3>Subscribe to our Newsletter to receive more tips</h3>
             
             <div class="flexit">
-                <form action=""></form>
+                <form id="my-form">
 
                 <div>
-                    <h4>Email: <input type="email" placeholder="Enter your best email"/></h4>
-                <h4>Your Birthday to get Presents: <input type="date"></h4>
+                    <h4>Email: <input type="email" placeholder="Enter your best email" id="email"/></h4>
+                <h4>Your Birthday to get Presents: <input type="date" id="bday"></h4>
                 </div>
-                
+
                 <div>
-                    <h4>Your favorite hour of the day: <input type="time" name="That you were born" id="time"></h4>
-                    <h4>Your fav Shoe Color: <input type="color"></h4>
+                    <h4>Your favorite hour of the day: <input type="time" name="hour" id="time"></h4>
+                    <h4>Your fav Shoe Color: <input type="color" id="shoeColor"></h4>
                 </div>
 
             
         </div>
            <div class="flexbox">
-                <h4><input id="submit" type="submit" value="Subscribe"/></h4> 
-                <h4><input id="submit" type="submit" value="Submit"/></h4> 
+              <!--   <h4><input id="subscribe" type="submit" value="Subscribe"/></h4> -->
+                <h4>
+                    <input type="submit" value="Submit" id="submit">
+                </h4> 
+                  
             </div>
-    </div>    
+        </form>
+
+            <ul id="users"></ul>
+    </div>       
 </article>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./Resources/css/index.css">
+
+ <!--JS Script-->
+ <script src="./main.js"></script>
+
+<!--COLLAPSIBLE WITHOUT JS-->
+<h2>Animated Collapsibles</h2>
+
+<h3>Collapsible Set:</h3>
+<input type="checkbox" id="section1">
+<label for="section1" class="collapsible">Design & Extras</label>
+<div class="content">
+    <ul>
+        <li>Logo Print</li>
+       
+    </ul>
+  
+</div>
+
+<input type="checkbox" id="section2">
+<label for="section2" class="collapsible">Size & Fit</label>
+<div class="content">
+    <ul>
+        <li>Logo Print</li>
+      
+    </ul>
+</div>
+<input type="checkbox" id="section3">
+<label for="section3" class="collapsible">Material & care instructions</label>
+<div class="content">
+    <ul>
+        <li>Logo Print</li>
+       
+    </ul></div>
+<input type="checkbox" id="section4">
+<label for="section4" class="collapsible">Shipping & Returns</label>
+<div class="content">
+    <ul>
+        <li>Logo Print</li>
+      
+    </ul>
+</div>
+
+
 </body>
 </html>
-
