@@ -40,7 +40,6 @@ body {
     padding-bottom: 20px; 
     */
     padding: 20px 20%;
-
     background: rgb(205, 235, 244);
     font-weight: lighter;
     margin-top: 50px;
@@ -66,8 +65,7 @@ IMG {
 
 #submit {
     border-color: #cfd9de;
-    text color: #0f1419;
-    border: 1px solid #cfd9e;
+    border: 1px solid yellow;
     border-radius: 18px;
     background: white;
     padding-left: 16px;
@@ -95,3 +93,100 @@ input{
     display: flex;
     justify-content:space-around;
 }
+
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    display: none;
+}
+
+.dropdown-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.dropdown-content li {
+    padding: 10px;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+#dropdown-toggle:checked + .dropdown-button + .dropdown-content {
+    display: block;
+}
+
+p {
+    margin-top: 0; /* Clear margin at the top of the paragraph */
+}
+
+/* Add your styles here */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border: red 5px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  
+  .content {
+    padding: 10px 8px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgb(205, 235, 244);
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"] + .collapsible + .content {
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  input[type="checkbox"]:checked + .collapsible + .content {
+    max-height: 100%;
+  }
+
